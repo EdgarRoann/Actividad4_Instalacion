@@ -10,8 +10,13 @@ Exercises
 """
 
 from random import choice
-from turtle import bgcolor, up, goto, dot, clear, update, ontimer, setup, hideturtle, tracer, listen, onkey, done, Turtle
+from turtle import (
+    bgcolor, up, goto, dot, clear, update,
+    ontimer, setup, hideturtle, tracer,
+    listen, onkey, done, Turtle
+)
 
+# ... (rest of the code remains unchanged)
 from freegames import floor, vector
 
 state = {'score': 0}
@@ -51,7 +56,6 @@ tiles = [
 # fmt: on
 
 
-
 def square(x, y):
     """Draw square using path at (x, y)."""
     path.up()
@@ -64,6 +68,8 @@ def square(x, y):
         path.left(90)
 
     path.end_fill()
+
+# ... (rest of the code remains unchanged)
 
 
 def offset(point):
